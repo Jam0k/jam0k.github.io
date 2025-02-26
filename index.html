@@ -1,32 +1,186 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>jamesmockford.dev</title>
-    <meta name="description" content="James Mockford Personal Website">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Mockford - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        .contact-info {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .summary {
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .skill-group {
+            margin-bottom: 10px;
+        }
+        .job {
+            margin-bottom: 25px;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .job-period {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .education-item, .cert-item {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container">
-        <h1>jamesmockford.dev</h1>
-        <h2>Welcome to my personal site</h2>
+    <header>
+        <h1>James Mockford - CV</h1>
+        <div class="contact-info">
+            <p>James.Mockford@outlook.com | 07778024479</p>
+        </div>
+    </header>
 
-        <h3>Posts</h3>
+    <div class="summary">
+        <p>I am an Operational Technology (OT) Cybersecurity Specialist with over 7 years' experience in both IT and OT environments. At Wessex Water, I help secure critical water infrastructure and enterprise systems, focusing on industrial control systems and SCADA networks. I previously specialized in identifying vulnerabilities within industrial and enterprise networks at Blueskytec, conducting penetration tests for high-profile clients. Skilled in adapting security measures to address the unique challenges of integrated IT/OT landscapes, I am proficient in applying frameworks like MITRE ATT&CK and NIS2, implementing comprehensive security solutions, and developing robust incident response strategies. Furthermore, I have demonstrated a keen ability to lead strategic cybersecurity initiatives in complex environments, balancing technical expertise with effective communication and leadership.</p>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <div class="skills">
         <ul>
-            <li><a href="posts/post1.html">Posts</a> - <small>Category</small></li>
+            <li><strong>OT/ICS Security:</strong> SCADA, PLC, DCS, IoT/IIoT, ICS protocols</li>
+            <li><strong>Network Security:</strong> Firewalls, Network Segmentation, IDS/IPS, Tenable, Claroty</li>
+            <li><strong>Penetration Testing:</strong> Kali Linux, Nmap, Metasploit, Wireshark, x64dbg</li>
+            <li><strong>SIEM & Log Management:</strong> Sentinel, LogRhythm, AlienVault, Wazuh, Defender</li>
+            <li><strong>Languages / Scripting:</strong> Python, Bash, PowerShell</li>
+            <li><strong>Networking:</strong> Industrial network architectures, LAN/WAN technologies, Mobile Communications, APIs</li>
+            <li><strong>Compliance Frameworks:</strong> IEC62443, NIST SP 800-61, NIST SP 800-82, NIS2, ISO27001, CE+</li>
         </ul>
+    </div>
 
-        <h3>Categories</h3>
-        <ul>
-            <li><a href="categories/categories.html">Category</a></li>
-        </ul>
-
-        <div class="pagination">
-            <a href="index.html" class="active">1</a>
-
+    <h2>Career Summary</h2>
+    
+    <div class="job">
+        <h3>Wessex Water (Feb 2024 - Present)</h3>
+        
+        <div class="position">
+            <div class="job-title">OT Cyber Security Specialist</div>
+            <div class="job-period">Dec 2024 - Present</div>
+            <p>As an OT Cybersecurity Specialist, I secure industrial control systems and SCADA networks, implementing targeted security controls that protect critical operational technology.</p>
+            <ul>
+                <li>Delivered guidance for enterprise-wide OT initiatives including Claroty deployment, NIS2 regulatory compliance, and secure-by-design implementation.</li>
+                <li>Spearheaded Claroty platform management, including design and implementation of a custom monitoring and alerting system that enhanced visibility and incident response capabilities across the OT environment.</li>
+                <li>Served as technical authority on cross-functional working groups, contributing expertise to shape organizational OT security standards, governance frameworks, and strategic roadmaps.</li>
+                <li>Architected and implemented comprehensive OT vulnerability management program, establishing standardized processes for vulnerability identification, prioritization, remediation, and reporting.</li>
+                <li>Conducted security assessments including device audits and penetration tests to evaluate security posture of new OT equipment, resulting in significant improvements to overall security stance.</li>
+            </ul>
+        </div>
+        
+        <div class="position">
+            <div class="job-title">Cyber Security Operations Lead</div>
+            <div class="job-period">Feb 2024 - Dec 2024</div>
+            <p>As Cyber Security Operations Lead at Wessex Water, I oversaw daily cyber security operations across our IT and OT environments.</p>
+            <ul>
+                <li>Led complete transformation of security monitoring capabilities, managing end-to-end migration from LogRhythm to Microsoft Sentinel from initial tender and procurement through deployment and implementation. This initiative significantly enhanced threat visibility while reducing alert fatigue, resulting in 60% improvement in both Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR) metrics.</li>
+                <li>Developed custom rules, alerts, and incident response playbooks for both IT and OT incident scenarios.</li>
+                <li>Contributed to critical documentation including Cyber Incident Rapid Response Handbook, Dynamic Security Posture Playbook, and Cyber Incident Response Plan covering both IT and OT environments.</li>
+                <li>Led BAU operations for key security tools: Defender, LogRhythm, Sentinel, Cofense, Proofpoint, and Hornbill.</li>
+                <li>Engineered advanced, custom Python-based security dashboards integrating multiple security systems into a cohesive "single pane of glass" solution. This executive-level reporting platform translated complex security metrics into actionable intelligence for leadership, enabling data-driven strategic decisions.</li>
+            </ul>
         </div>
     </div>
-</body>
 
+    <div class="job">
+        <h3>Blueskytec (April 2022 - February 2024)</h3>
+        
+        <div class="position">
+            <div class="job-title">Network Penetration & Test Analyst</div>
+            <p>As a Network Penetration & Test Analyst at Blueskytec, I specialized in identifying vulnerabilities within critical infrastructure and industrial control systems, offering tailored cybersecurity solutions to clients.</p>
+            <ul>
+                <li>Conducted penetration tests on OT environments, including PLCs, SCADA systems, and ICS devices for clients such as Schneider Electric, Saudi Aramco, Shell (Nigeria LNG), DSTL (MoD), and Associated British Ports.</li>
+                <li>Applied MITRE ATT&CK framework for ICS to identify and mitigate OT-specific threats.</li>
+                <li>Demonstrated live OT cyber-attacks at industry events, highlighting vulnerabilities in industrial systems.</li>
+                <li>Architected and constructed comprehensive Industrial Control Systems (ICS) testbed environment, replicating production infrastructure for secure penetration testing and validation of internally developed security products.</li>
+                <li>Established and managed complete enterprise infrastructure from ground zero, including designing network architecture, implementing multi-layered firewall protection with granular policy management, deploying Office 365/Exchange environment, and creating specialized servers (file system, Git version control, WSUS patch management).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="job">
+        <h3>BMT Defence & Security UK (September 2016 - April 2022)</h3>
+        
+        <div class="position">
+            <div class="job-title">ICT Analyst</div>
+            <div class="job-period">Apr 2020 - Apr 2022</div>
+            <p>Managed and secured company-wide IT infrastructure while ensuring compliance with industry standards.</p>
+        </div>
+        
+        <div class="position">
+            <div class="job-title">Junior ICT Analyst</div>
+            <div class="job-period">Feb 2018 - Apr 2020</div>
+            <p>Provided comprehensive IT support to over 1000 employees across multiple locations.</p>
+        </div>
+        
+        <div class="position">
+            <div class="job-title">ICT Apprentice</div>
+            <div class="job-period">Sep 2016 - Feb 2018</div>
+            <p>Supported and documented key IT systems, with a focus on SharePoint environments.</p>
+        </div>
+    </div>
+
+    <h2>Education & Certificates</h2>
+    <ul>
+        <li>ISA/IEC 62443 Cybersecurity Fundamentals Specialist (currently working towards)</li>
+        <li>ISA/IEC 62443 Cybersecurity Design Specialist (currently working towards)</li>
+        <li>ITIL v4</li>
+        <li>CompTIA A+</li>
+        <li>CompTIA Network+</li>
+        <li>Windows Server 2019 Administration</li>
+        <li>City & Guilds Level 3 Diploma in Information Systems</li>
+        <li>Level 3 Extended Diploma in Information Technology (Bath College)</li>
+        <li>9 A*-C GCSE's (Including Maths and English) (St Laurence Academy)</li>
+    </ul>
+
+    <h2>Professional Development & Extracurricular Activities</h2>
+    <ul>
+        <li>Active participant on TryHackMe platform, enhancing practical cybersecurity skills.</li>
+        <li>Regular contributor to open-source projects on GitHub.</li>
+        <li>Alumnus of the START incubator program.</li>
+        <li>Practitioner of Brazilian Jiu-Jitsu.</li>
+    </ul>
+</body>
 </html>
