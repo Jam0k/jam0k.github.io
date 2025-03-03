@@ -6,90 +6,193 @@
     <title>James Mockford - CV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            padding: 40px 20px;
+            color: #1d1d1f;
+            background-color: #fbfbfd;
         }
         header {
-            margin-bottom: 20px;
+            text-align: center;
+            margin-bottom: 40px;
         }
         h1 {
-            margin-bottom: 5px;
-            color: #2c3e50;
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
         }
         .contact-info {
-            margin-bottom: 15px;
-            font-size: 1.1em;
+            margin-bottom: 30px;
+            font-size: 17px;
+            color: #86868b;
         }
         .summary {
-            margin-bottom: 25px;
-            text-align: justify;
+            margin-bottom: 40px;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 19px;
+            color: #515154;
+            line-height: 1.6;
         }
         h2 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-            color: #2c3e50;
-            margin-top: 30px;
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            letter-spacing: -0.5px;
+            text-align: center;
+            color: #1d1d1f;
         }
-        .skills {
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+        /* Two-column layout for skills */
+        .skills-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 25px;
+            gap: 30px;
+            margin-bottom: 40px;
         }
-        .skill-group {
-            margin-bottom: 10px;
+        .skills-column {
+            flex: 1;
+            min-width: 300px;
         }
+        .skill-item {
+            margin-bottom: 15px;
+            background-color: #f5f5f7;
+            padding: 15px 20px;
+            border-radius: 12px;
+        }
+        .skill-item strong {
+            color: #06c;
+            font-weight: 600;
+        }
+        /* Job styling */
         .job {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .position {
             margin-bottom: 25px;
         }
         .job-title {
-            font-weight: bold;
-            font-size: 1.1em;
+            font-weight: 600;
+            font-size: 20px;
             margin-bottom: 5px;
+            color: #06c;
         }
         .job-period {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-bottom: 10px;
+            font-size: 15px;
+            color: #86868b;
+            margin-bottom: 15px;
         }
+        /* List styling */
         ul {
-            margin-top: 10px;
+            margin-top: 15px;
+            padding-left: 20px;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 15px;
         }
-        .education-item, .cert-item {
-            margin-bottom: 8px;
+        li:before {
+            content: "•";
+            color: #06c;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        /* Columns for education and professional development */
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .column {
+            flex: 1;
+            min-width: 300px;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .column h2 {
+            text-align: left;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            .summary {
+                font-size: 17px;
+            }
+            .job {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>James Mockford - CV</h1>
+        <h1>James Mockford</h1>
         <div class="contact-info">
             <p>James.Mockford@outlook.com | 07778024479</p>
         </div>
     </header>
 
     <div class="summary">
-        <p>I am an Operational Technology (OT) Cybersecurity Specialist with over 7 years' experience in both IT and OT environments. At Wessex Water, I help secure critical water infrastructure and enterprise systems, focusing on industrial control systems and SCADA networks. I previously specialized in identifying vulnerabilities within industrial and enterprise networks at Blueskytec, conducting penetration tests for high-profile clients. Skilled in adapting security measures to address the unique challenges of integrated IT/OT landscapes, I am proficient in applying frameworks like MITRE ATT&CK and NIS2, implementing comprehensive security solutions, and developing robust incident response strategies. Furthermore, I have demonstrated a keen ability to lead strategic cybersecurity initiatives in complex environments, balancing technical expertise with effective communication and leadership.</p>
+        <p>I am an Operational Technology (OT) Cybersecurity Specialist with over 7 years' experience in both IT and OT environments. At Wessex Water, I help secure critical water infrastructure and enterprise systems, focusing on industrial control systems and SCADA networks. I previously specialized in identifying vulnerabilities within industrial and enterprise networks at Blueskytec, conducting penetration tests for high-profile clients.</p>
     </div>
 
     <h2>Technical Skills</h2>
-    <div class="skills">
-        <ul>
-            <li><strong>OT/ICS Security:</strong> SCADA, PLC, DCS, IoT/IIoT, ICS protocols</li>
-            <li><strong>Network Security:</strong> Firewalls, Network Segmentation, IDS/IPS, Tenable, Claroty</li>
-            <li><strong>Penetration Testing:</strong> Kali Linux, Nmap, Metasploit, Wireshark, x64dbg</li>
-            <li><strong>SIEM & Log Management:</strong> Sentinel, LogRhythm, AlienVault, Wazuh, Defender</li>
-            <li><strong>Languages / Scripting:</strong> Python, Bash, PowerShell</li>
-            <li><strong>Networking:</strong> Industrial network architectures, LAN/WAN technologies, Mobile Communications, APIs</li>
-            <li><strong>Compliance Frameworks:</strong> IEC62443, NIST SP 800-61, NIST SP 800-82, NIS2, ISO27001, CE+</li>
-        </ul>
+    <div class="skills-container">
+        <div class="skills-column">
+            <div class="skill-item">
+                <strong>OT/ICS Security:</strong> SCADA, PLC, DCS, IoT/IIoT, ICS protocols
+            </div>
+            <div class="skill-item">
+                <strong>Network Security:</strong> Firewalls, Network Segmentation, IDS/IPS, Tenable, Claroty
+            </div>
+            <div class="skill-item">
+                <strong>Penetration Testing:</strong> Kali Linux, Nmap, Metasploit, Wireshark, x64dbg
+            </div>
+            <div class="skill-item">
+                <strong>SIEM & Log Management:</strong> Sentinel, LogRhythm, AlienVault, Wazuh, Defender
+            </div>
+        </div>
+        
+        <div class="skills-column">
+            <div class="skill-item">
+                <strong>Languages / Scripting:</strong> Python, Bash, PowerShell
+            </div>
+            <div class="skill-item">
+                <strong>Networking:</strong> Industrial network architectures, LAN/WAN technologies, Mobile Communications, APIs
+            </div>
+            <div class="skill-item">
+                <strong>Compliance Frameworks:</strong> IEC62443, NIST SP 800-61, NIST SP 800-82, NIS2, ISO27001, CE+
+            </div>
+        </div>
     </div>
 
     <h2>Career Summary</h2>
@@ -162,25 +265,31 @@
         </div>
     </div>
 
-    <h2>Education & Certificates</h2>
-    <ul>
-        <li>ISA/IEC 62443 Cybersecurity Fundamentals Specialist (currently working towards)</li>
-        <li>ISA/IEC 62443 Cybersecurity Design Specialist (currently working towards)</li>
-        <li>ITIL v4</li>
-        <li>CompTIA A+</li>
-        <li>CompTIA Network+</li>
-        <li>Windows Server 2019 Administration</li>
-        <li>City & Guilds Level 3 Diploma in Information Systems</li>
-        <li>Level 3 Extended Diploma in Information Technology (Bath College)</li>
-        <li>9 A*-C GCSE's (Including Maths and English) (St Laurence Academy)</li>
-    </ul>
+    <div class="two-columns">
+        <div class="column">
+            <h2>Education & Certificates</h2>
+            <ul>
+                <li>ISA/IEC 62443 Cybersecurity Fundamentals Specialist (currently working towards)</li>
+                <li>ISA/IEC 62443 Cybersecurity Design Specialist (currently working towards)</li>
+                <li>ITIL v4</li>
+                <li>CompTIA A+</li>
+                <li>CompTIA Network+</li>
+                <li>Windows Server 2019 Administration</li>
+                <li>City & Guilds Level 3 Diploma in Information Systems</li>
+                <li>Level 3 Extended Diploma in Information Technology (Bath College)</li>
+                <li>9 A*-C GCSE's (Including Maths and English) (St Laurence Academy)</li>
+            </ul>
+        </div>
 
-    <h2>Professional Development & Extracurricular Activities</h2>
-    <ul>
-        <li>Active participant on TryHackMe platform, enhancing practical cybersecurity skills.</li>
-        <li>Regular contributor to open-source projects on GitHub.</li>
-        <li>Alumnus of the START incubator program.</li>
-        <li>Practitioner of Brazilian Jiu-Jitsu.</li>
-    </ul>
+        <div class="column">
+            <h2>Professional Development</h2>
+            <ul>
+                <li>Active participant on TryHackMe platform, enhancing practical cybersecurity skills.</li>
+                <li>Regular contributor to open-source projects on GitHub.</li>
+                <li>Alumnus of the START incubator program.</li>
+                <li>Practitioner of Brazilian Jiu-Jitsu.</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
